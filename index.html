@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Text editor</title>
+
+  </head>
+  <body style="padding:0;margin:0;">
+<h1 style="text-align:center;width:100%;height:45px;background-color:orange;color:white;font-size:25px;padding-top:10px;margin:0;">Text editor virsion 1.0</h1>
+<fieldset style="color:black;width:650px;height:550px;outline:none;float:left;">
+<legend style="color:red;font-size:24px;">Write code</legend>
+<textarea rows="20" cols="50" style="border:none;font-size:22px;outline:none;" id="textv">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+</html>
+
+
+</textarea>
+
+</fieldset>
+<fieldset style="color:black;width:650px;height:565px;outline:none;float:left;padding:0;margin:0;">
+  <legend style="color:red;font-size:24px;">Result</legend>
+  <div style="padding:15px;font-size:20px;box-sizing:border-box;float:left;width:650px;height:545px;" id="divv">
+
+  </div>
+</fieldset>
+
+<button type="button" name="button" style="cursor:pointer;color:white;font-size:17px;width:120px;height:30px;float:left;clear:left;border:none;box-shadow:0px 0px 8px red;margin-left:620px;background:red;" onclick="srun()">Run code</button>
+<script>
+function srun(){
+
+  var t = document.getElementById("textv").value;
+  var di = document.getElementById("divv");
+  di.innerHTML = t;
+}
+
+</script>
+  </body>
+
+</html>
