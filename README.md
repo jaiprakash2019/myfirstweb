@@ -1,2 +1,0 @@
-# myfirstweb
-my porpholiyo
