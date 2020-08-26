@@ -1,0 +1,181 @@
+/* page disign coding*/
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+#img_div {
+    width: 120px;
+    height: 450px;
+    background: #173a5e;
+    transform: rotate(220deg);
+    position: fixed;
+    left: -50px;
+    top: -150px;
+}
+#img_con {
+    width: 90px;
+    height: 90px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: relative;
+    left: -40px;
+    top: 220px;
+    box-shadow: 0px 0px 10px gray;
+}
+#private {
+    font-size: 50px;
+    color: blueviolet;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+}
+#c_con {
+    width: 320px;
+    height: 230px;
+    border-left: 3px solid #173a5e;
+    border-bottom: 3px solid #173a5e;
+    left: 38%;
+    top: 140px;
+    position: fixed;
+}
+#round {
+    width: 50px;
+    height: 50px;
+    font-size: 45px;
+    color: white;
+    background: #173a5e;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    top: -50px;
+    left: -27px;
+    box-sizing: border-box;
+}
+#ucontact,
+#ufnumber,
+#usnumber {
+    width: 290px;
+    height: 37px;
+    padding-left: 10px;
+    margin-left: 30px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px #ccc;
+    border-left: 5px solid blueviolet;
+    outline: none;
+    font-size: 17px;
+    position: relative;
+    top: -40px;
+    margin-bottom: 18px;
+}
+#ucontact::placeholder {
+    font-size: 15px;
+}
+#ufnumber::placeholder {
+    font-size: 15px;
+}
+#usnumber::placeholder {
+    font-size: 15px;
+}
+#sub {
+    width: 100px;
+    height: 40px;
+    background: blueviolet;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 0.8s;
+    position: relative;
+    left: 220px;
+    top: -40px;
+}
+#sub:hover {
+    background: #173a5e;
+    transition: 0.8s;
+    cursor: pointer;
+}
+#clist {
+    width: 25%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    overflow-y: scroll;
+}
+#clist::-webkit-scrollbar {
+    width: 12px;
+    background: white;
+    box-shadow: inset 0px 0px 10px gray;
+}
+#clist::-webkit-scrollbar-track {
+    background: blueviolet;
+    border-radius: 10px;
+    ;
+}
+#search {
+    width: 250px;
+    height: 33px;
+    padding-left: 15px;
+    margin-left: 30px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 5px #ccc;
+    border-radius: 30px;
+    outline: none;
+    font-size: 17px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    margin-bottom: 18px;
+}
+@media only screen and (max-width:600px) {
+    #private {
+        font-size: 25px;
+        margin-top: 120px;
+        position: fixed;
+        left: 40px;
+    }
+    #c_con {
+        width: 260px;
+        height: 190px;
+        margin-top: 100px;
+        margin-left: -95px;
+    }
+    #clist {
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 500px;
+    }
+    body {
+        overflow-y: scroll;
+    }
+    #ucontact {
+        width: 220px;
+        height: 30px;
+    }
+    #ufnumber {
+        width: 220px;
+        height: 30px;
+    }
+    #usnumber {
+        width: 220px;
+        height: 30px;
+    }
+    #sub {
+        width: 90px;
+        height: 30px;
+        position: relative;
+        left: 160px;
+        font-size: 15px;
+        padding-top: 7px;
+    }
+}

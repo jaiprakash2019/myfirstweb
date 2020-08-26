@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <link rel="stylesheet" type="text/css" href="style/styleaco.css" />
+    <link rel="stylesheet" type="text/css" href="style/animated.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Business Page</title>
+</head>
+<body>
+ <header id="buss_con">
+<p id="buss_wri">Business Management System</p>	
+<p id="buss_wrio">Manage Your All Business Details Like Ladger, Voucher, Tax, Balance Sheet  And Many More</p>	
+</header> 
+	
+	
+<div id="company_con">
+<div id="logo_name">
+<div id="logo"></div>
+<div id="name"></div>
+
+</div>
+
+<div id="option-box">
+
+
+        <button id="unit_of_measure">
+            <div id="primary_content">
+            <i class="fa fa-balance-scale" style="font-size:25px;float:left"></i> &nbspUnit of measure
+            </div>
+
+            <div id="secondary_content">
+                <form id="unit_form">
+
+                    <i class="fa fa-close" style="float:right" id="close-icon"></i>
+                    <input type="text" placeholder="Symbol">
+                    <input type="text" placeholder="Formal name">
+                    <input type="submit" value="Set">
+
+                </form>
+
+            </div>
+        </button>
+
+        
+
+        <button id="tax_btn">
+           
+            <i class="fa fa-calculator" id="calcu" style="font-size:22px;float:left"></i> 
+            <span id="i_close" style="font-size:20px;font-weight:bold;">Tax setup</span>
+                 
+                <form id="form_tax">
+
+                   
+                    <input type="text" required name="taxname" id="taxname" placeholder="Tax name" style="margin-top:22px;" />
+                    <input type="text" required name="taxprecent" id="taxpre" placeholder="2%" />
+                    <input type="submit" value="Set" name="set" id="lsave" />
+
+                </form> 
+            
+            
+        </button>
+
+
+
+        
+        <button id="sales-btn"><i class="fa fa-money" style="font-size:25px;float:left"></i> &nbspSales voucher</button>
+        <button id="shut_company_id"><i class="fa fa-window-close" style="font-size:25px;float:left"></i> &nbspShut company</button>
+    </div>
+
+	
+	
+</div>
+	
+
+	
+<div id="voucher_con">
+
+    
+
+    <div id="close_btn">
+        <button id="close_invoice">
+            <i class="fa fa-close" style="font-size:16px;font-weight:bold;">&nbsp Close invoice</i>
+        </button>
+    </div>
+
+    <div id="delete_btn">
+            <button id="del_inv">
+                <i class="fa fa-trash" style="font-size:14px;font-weight:bold;">&nbsp Delete invoice</i>
+            </button>
+        </div>
+
+<div id="num_date">
+    <p id="num"></p>
+    <p id="date_vo"></p>
+</div>
+
+<div id="address_logo_con">
+    <div id="voucher_address">
+        <p id="address_c" style="font-size:45px;padding-left:10px;text-transform:capitalize;"></p>
+        <p id="address_ad" style="font-size:17px;padding-left:10px;text-transform:capitalize;"></p>
+        <p id="address_ph" style="font-size:17px;padding-left:10px;text-transform:capitalize;"></p>
+        <p id="address_web" style="font-size:17px;padding-left:10px;text-transform:capitalize;"></p>
+    </div>
+    <div id="company_voucher_logo"></div>
+
+
+</div>
+
+<div id="voucher_form_con">
+<form id="form_co">
+    
+       <span style="font-size:18px;">Name</span><br />
+       <input type="text" id="name_field" /><br/><br/>
+       <span style="font-size:18px;">Email</span><br />
+       <input type="email" id="email_field" /><br/><br/>
+       <span style="font-size:18px;">Address</span><br />
+       <input type="text" id="address_field" /><br/><br/>
+       <span style="font-size:18px;">Phone</span><br />
+       <input type="number" id="phone_field" />
+
+</form>
+
+
+</div>
+
+<div id="item_con">
+    <form id="first_item_input">
+            <table  id="table_inp" width="100%" style="border:1px solid black">
+                    <tr style="background:black;color:white">
+                    <td>Description</td>
+                    <td>Price</td>
+                    <td>Qty</td>
+                    <td>Unit</td>
+                    <td>Amount</td>
+                    <td id="none_del">Del</td>
+                    </tr>               
+                   
+            </table>
+        
+</form>
+
+
+<div id="subtotal">
+    <table width="100%" id="table_border" style="margin-bottom:10px;">
+    
+        <tr>
+    <td width="50%" style="border:none;"></td>
+    <td style="font-size:19px;">Subtotal</td>
+    <td  id="sub" style="text-align:right;"><i class="fa fa-rupee" > 0.00 </i></td>
+        </tr>
+        <tr>
+                <td  style="border:none;"></td>
+                <td style="font-size:19px;line-height:35px;" id="show_tax_p" ></td>
+                <td  style="border:none;line-height:35px;text-align:right;" id="pre_symbol"></td>
+         </tr>
+    
+                 <tr>
+                    <td  style="border:none;"></td>
+                    <td style="font-size:19px;">Total</td>
+                    <td style="text-align:right;"><i class="fa fa-rupee"  id="full_tax"> 0.00 </i></td>
+                 </tr>
+
+                 <tr>
+                    <td  style="border:none;"></td>
+                    <td style="font-size:19px;">Paid</td>
+                    <td style="text-align:right;"><i class="fa fa-rupee" id="paid" style="float:left;"> <input type="number" placeholder="Amount" style="width:90%;height:30px;padding-left:5px;" id="paid_bal" /></i></td>
+                 </tr>
+    
+                <tr>
+                      <td  style="border:none;"></td>
+                     <td style="font-size:19px;font-weight:bold;">Balance Due</td>
+                 <td id="duese_b" style="text-align:right;"><i class="fa fa-rupee"></i> 0.00</td>
+               </tr>
+    
+    </table>
+    <button id="get" style="position:absolute;bottom:-170px;right:0;">Get bill !</button>
+    <div id="item_add_">
+        <i class="fa fa-plus-square" style="font-size:20px;color:white;background:black;padding:5px;">&nbspAdd item</i>
+    </div>
+    </div>
+    
+    </div>
+
+
+
+   
+</div>
+
+<div id="vou_search_con">
+  
+        <div id="manage_vou_se">
+
+                <h1 style="color:white;padding:10px;padding-left:20px;text-align:center;">Search voucher</h1>
+                   <input type="number" id="voucher_num_input" />  
+                </div>
+   
+<div style="display:none" id="manage_tax_s">
+   <h1 style="color:white;padding:10px;padding-left:20px;text-align:center;">Manage tax</h1>
+    <select id="manage_tax">
+       <option>.....select tax......</option>
+
+    </select>
+</div>
+
+
+        
+</div>
+
+	
+		
+
+<script src="script/scriptaco.js">
+
+
+</script>
+
+</body>
+</html>

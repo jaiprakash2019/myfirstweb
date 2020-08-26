@@ -1,0 +1,404 @@
+*{
+
+    padding:0;
+    margin: 0;
+    box-sizing:border-box;
+
+}
+
+#main_con{
+width:100%;
+height:100vh;
+background:#173a5e;
+position:absolute;
+top:0;
+left:0;
+z-index:1;
+
+}
+
+#profile_page_con{
+    width:700px;
+    height:450px;
+    position:absolute;
+    top:16%;
+    left:24%;
+    transform:translate(-50%,-50%);
+    background:white;
+    border-radius:5px;
+  
+
+}
+
+
+@media only screen and (max-width:600px)
+{
+    body{
+        overflow-y:scroll;
+
+    }
+
+    #profile_page_con{
+    width:96%;
+    height:550px;
+
+    top:2%;
+    left:2%;
+    padding:0;
+    }
+
+#alert{
+    width:240px;
+    height:20px;
+  
+    display:block;
+   margin-top:80px;
+   margin-left:-10px;
+
+}
+ 
+#ncon{
+    margin-top:-10px;
+    margin-left:-84px;
+
+}
+
+#banner{
+
+
+  width:120px;
+  height:200px;
+margin-top:-120px;
+margin-left:40px;
+ 
+   
+  
+}
+
+#time{
+    margin-top:-40px;
+    position: relative;
+    left:15px;
+
+}
+
+#pname{
+    font-size:25px;
+    margin-left:-65px;
+    margin-top:30px;
+    position: relative;
+ 
+}
+
+
+
+#menu{
+    margin-bottom:22px;
+
+}
+
+#menutw{
+    margin-bottom:22px;
+
+}
+
+#menuth{
+    margin-bottom:22px;
+
+}
+
+#menufo{
+    margin-bottom:22px;
+
+}
+
+#menufi{
+    margin-bottom:22px;
+
+}
+
+#bannero{
+
+   
+    margin-left:-90px;
+}
+
+}
+
+/*snhkdjfhskdfgskadlvnalskdfgvjnakdlfjglkdfjg*/
+
+#profile_con{
+
+    width:170px;
+    height:170px;
+    box-shadow:0px 0px 16px gray;
+    border-radius:50%;
+   
+   background-size:cover;
+
+    position:absolute;
+    left:5%;
+    top:55%;
+    padding-top:50px;
+    padding-left:23px;
+   
+}
+
+#up{
+    color:#173a5e;
+    font-size:25px;
+    text-align:center;
+    
+
+}
+#upload_img{
+
+    opacity:0;
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    border-radius:50%;
+    height:170px;
+    cursor: pointer;
+    outline:none;
+
+}
+
+#input_uname{
+
+        text-transform:capitalize;
+        font-family:calibri;
+        font-size:40px;
+        color:#173a5e;
+      
+
+}
+
+#ncon{
+    position:relative;
+    top:50%;
+    left:30%;
+    width:300px;
+    height:60px;
+  
+    text-align:center;
+
+}
+
+
+#banner{
+	
+	width:220px;
+    height:160px;
+   position: relative;
+   top:-20px;
+
+    
+   
+}
+
+#imgcon{
+	
+	border:2px solid #ccc;
+	width:80px;
+	height:80px;
+	padding-top:5px;
+	
+}
+
+#sitename{
+	color: #173a5e;
+	font-family:'fascinate inline',cursive;
+	font-size:32px;
+}
+
+#pn{
+    border:1px solid red;
+    width:400px;
+    height:300px;
+}
+
+#next{
+
+    width:110px;
+    height:50px;
+   cursor: pointer;
+    position:absolute;
+    bottom:5%;
+    right:0%;
+    color:white;
+
+    
+}
+
+#alert{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:18px;
+    color:red;
+   position: relative;
+   left:20px;
+   top:360px;
+
+}
+
+
+/*start profile page coding */
+
+#header{
+
+    width:100%;
+    height:180px;
+    box-shadow:0px 0px 10px gray;
+    background:#173a5e;
+    position:fixed;
+}
+
+#u_name{
+
+    width:400px;
+    height:70px;
+    text-shadow:0px 0px 10px gray;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:white;
+    padding-top:10px;
+    margin:20px auto;
+    font-size:20px;
+}
+
+#pp{
+    width:150px;
+    height:150px;
+    box-shadow:0px 0px 15px gray;
+    border-radius:50%;
+    margin:-10px auto;
+    position: relative;
+   
+
+}
+
+
+#footere{
+
+    width:100%;
+    height:60px;
+    background:#173a5e;
+    position:fixed;
+    bottom:0px;
+    box-shadow:0px 0px 15px gray;
+}
+
+
+
+#bannero{
+	
+	width:75px;
+    height:65px;
+   position: relative;
+   top:-5px;
+left:40%;
+float:left; 
+}
+
+
+#sitenameo{
+	color: white;
+	font-family:'fascinate inline',cursive;
+    font-size:32px;
+    float: left;
+    position: relative;
+    left:40%;
+    top:10px;
+
+}
+
+#sectione{
+
+    width:100%;
+    height:200px;
+
+    position:fixed;
+    top:300px;
+    overflow:scroll;
+    
+}
+
+#sectione::-webkit-scrollbar{
+    background:white;
+    width:2px;
+}
+
+#menu{
+    width:140px;
+    height:140px;
+    border:2px solid #ccc;
+    float: left;
+    box-shadow:0px 0px 10px #ccc;
+    margin-left:105px;
+    border-radius:5px;
+    cursor: pointer;
+    padding-top:5px;
+
+}
+
+#menutw{
+    width:140px;
+    height:140px;
+    border:2px solid #ccc;
+    float: left;
+    box-shadow:0px 0px 10px #ccc;
+    margin-left:105px;
+    border-radius:5px;
+    cursor: pointer;
+    padding-top:5px;
+
+}
+
+#menuth{
+    width:140px;
+    height:140px;
+    border:2px solid #ccc;
+    float: left;
+    box-shadow:0px 0px 10px #ccc;
+    margin-left:105px;
+    border-radius:5px;
+    cursor: pointer;
+
+}
+
+#menufo{
+    width:140px;
+    height:140px;
+    border:2px solid #ccc;
+    float: left;
+    box-shadow:0px 0px 10px #ccc;
+    margin-left:105px;
+    border-radius:5px;
+    cursor: pointer;
+
+}
+
+#menufi{
+    width:140px;
+    height:140px;
+    border:2px solid #ccc;
+    float: left;
+    box-shadow:0px 0px 10px #ccc;
+    margin-left:105px;
+    border-radius:5px;
+    cursor: pointer;
+
+
+}
+
+#time{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:23px;
+    color:white;
+    position:absolute;
+    padding:50px;
+    
+   
+}
+

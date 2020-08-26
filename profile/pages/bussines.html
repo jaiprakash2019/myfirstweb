@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <link rel="stylesheet" type="text/css" href="style/styleb.css" />
+    <link rel="stylesheet" type="text/css" href="style/animated.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact Page</title>
+</head>
+<body>
+ <header id="buss_con">
+<p id="buss_wri">Business Management System</p>	
+<p id="buss_wrio">Manage Your All Business Details Like Ladger, Voucher, Tax, Balance Sheet  And Many More</p>	
+</header> 
+
+	
+<div id="company_con">
+	
+	
+<div id="com_con">
+
+<div id="com_creat">
+	<i class="fa fa-home" id="fahome" style="font-size:60px;padding:6px;padding-top:-4;background:gray; "></i>
+<button id="creat_btn" onclick="show_form()">Creat Company</button>	
+</div>
+<div id="com_delete">
+		<i class="fa fa-trash" style=" font-size:60px;padding:8px;padding-top:-4;background:gray;"></i>
+<button id="delete_btn">Delete Company</button>
+	<div id="none_hide" style="display:none;">
+	<p id="show_alert" style="font-size:18px;color:red;margin-top:5px;">Are you sure ?</p>
+	<button id="ok_btn">Ok</button><button id="cancle_btn">Cancel</button>
+	</div>
+		<p id="show_al" style="display: none; font-size:18px;color:red;margin-top:5px;">Company not found</p>
+</div>
+<div id="com_logout">
+		<i class="fa fa-sign-out" style="font-size:60px;padding:8px;background:gray; "></i>
+<button id="logout_btn">Logout</button>	
+</div>
+</div>
+
+
+	
+	
+	
+			
+		<p id="notice_alert" style="font-size:35px;text-align: center;display: none;">Please wait...</p>
+
+	
+	
+	
+</div>
+	
+	
+	<div id="creat_model">
+			
+	<div id="show_box">
+	<i class="fa fa-check" id="check_icon"></i>
+	<p id="message">Company created succefully</p>
+	
+	<button id="click_btn" onClick="hidea()">Click here</button>
+	</div>
+<div id="com_logo">
+	<p id="logoph">Company logo Upload</p>
+	<input type="file" onchange="show_companylogo()" id="uploadph" accept="image/*" />
+</div>
+
+	<div id="com_header">Creat Company</div>
+	<div id="com_close" onclick="close_form()">
+			<i class="fa fa-close" style="padding-left:5px;color:red; font-size:40px;"></i>
+	</div>
+
+	<div id="form_con">
+	<form id="form_data">
+	<input type="text" id="companyname" placeholder="Company name" required="required" />
+	<input type="text" id="mallingname" placeholder="Malling name" required="required" />
+	<textarea id="textarea">Address</textarea>
+		<input type="number" id="phonenumber" placeholder="Phone number" required="required" />
+		<input type="number" id="faxnumber" placeholder="Fax number"  />
+		<input type="email" id="email" placeholder="Email"  />
+		<input type="website" id="website" placeholder="Website"  />
+		
+		<input type="date" id="date" required="required" />
+		<span id="stocktype">Stock type</span>
+		<span id="financial">Finicial year</span>
+		<select name="choose" id="choose">
+		<option value="Account only">Accounts Only</option>
+			<option value="account with inventry">Account with Inventory</option>
+		
+		</select>
+		<input type="submit" value="Creat Now !" onclick="saved_a()" id="send" />
+		
+		
+	</form>
+
+	</div>
+	
+	
+	
+</div>	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+<script src="script/scriptb.js">
+
+
+</script>
+
+</body>
+</html>

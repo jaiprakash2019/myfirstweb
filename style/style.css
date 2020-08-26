@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+*{
+	
+	padding:0;
+	margin: 0;
+	box-sizing:border-box;
+}
+
+body{
+	overflow:hidden;
+
+
+}
+
+@media only screen and (max-width:600px)
+{
+	body{
+		overflow:scroll;
+		
+	}
+}
+
+#homecon{
+	
+	width:100%;
+	top:50%;
+	left:50%;
+	
+	position: absolute;
+	box-sizing:border-box;
+	float:left;
+	transform: translate(-50%,-50%);
+}
+
+#siteintrocon{
+	
+	width:250px;
+	height:250px;
+	
+	margin:0 auto;
+}
+
+#imgcon{
+	
+	border:2px solid #ccc;
+	width:110px;
+	height:110px;
+	padding-top:5px;
+	
+}
+
+#sitename{
+	color: #173a5e;
+	font-family:'fascinate inline',cursive;
+	font-size:50px;
+}
+
+#side-bar{
+	display:block;
+	position: absolute;
+	z-index:1000;
+	width:320px;
+	height:655px;
+	background:#173a5e;
+	box-shadow:1px 2px 16px black;
+	left:-330px;
+	
+}
+
+@keyframes sidebar{
+	
+	0%{left:-330px;}
+	100%{left:0px;}
+	
+}
+
+@keyframes sidebaro{
+	
+	0%{left:0px;}
+	100%{left:-330px;}
+	
+}
+
+
+
+
+
+#logh,#loge{
+	
+	font-size:30px;
+	color: white;
+	text-align:center;
+	padding:15px;
+	padding-top:50px;
+	margin-top:-10px;
+}
+
+#login_form input[type='password']::placeholder{
+	font-family:fontAwesome;
+	
+	
+	
+}
+
+
+#login_form input[type='text']::placeholder{
+	font-family:fontAwesome;
+
+	
+}
+
+
+#signup_form input[type='password']::placeholder{
+	font-family:fontAwesome;
+	
+	
+	
+}
+
+
+#signup_form input[type='text']::placeholder{
+	font-family:fontAwesome;
+
+	
+}
+
+
+#signup_form input[type='number']::placeholder{
+	font-family:fontAwesome;
+
+	
+}
+
+
+#signup_form input[type='email']::placeholder{
+	font-family:fontAwesome;
+
+	
+}
+
+
+#user{
+	width:280px;
+	height:40px;
+	outline:none;
+	border:none;
+	padding:5px;
+	margin-bottom:23px;
+	margin-left:16px;
+	padding-left:15px;
+	color:black;
+	border-radius:30px;
+	transition:0.8s;
+	font-family:'Courier New', Courier, monospace;
+	font-size:18px;
+	font-weight:normal;
+
+	
+	
+}
+
+#pass,#passs,#emails,#mobiles,#users{
+	width:280px;
+	height:40px;
+	outline:none;
+	border:none;
+	padding:5px;
+	margin-left:16px;
+	padding-left:15px;
+	font-family:'Courier New', Courier, monospace;
+	font-size:18px;
+	font-weight:normal;
+	margin-bottom:23px;
+	transition:0.8s;
+	border-radius:30px;
+	
+
+
+}
+
+
+
+#log{
+
+	width:80px;
+	height:35px;
+	border:none;
+	background:white;
+	margin-left:216px;
+	margin-top:4px;
+	color: #173a5e;
+	padding:8px;
+	outline:none;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size:16px;
+	cursor:pointer;
+	transition:0.8s;
+	border-radius:30px;
+}
+
+
+
+#logs{
+
+	width:80px;
+	height:35px;
+	border:none;
+	background:white;
+	position:absolute;
+	left:210px;
+	bottom:20px;
+	color: #173a5e;
+	padding:8px;
+	outline:none;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size:16px;
+	cursor:pointer;
+	transition:0.8s;
+	border-radius:30px;
+}
+
+
+
+
+#succ,#spa{
+	
+	color:greenyellow;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size:20px;
+	margin:0;
+	padding:0;
+
+	
+}
+
+#succ{
+	
+	color:greenyellow;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size:20px;
+	margin:0;
+	padding:0;
+	padding-left:20px;
+
+	
+}
+
+
+
+#spa{
+	
+	color:greenyellow;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size:20px;
+	margin-left:20px;
+	position:relative;
+	top:-10px;
+	
+	
+}
+.regis{
+	
+	color:white;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size:20px;
+	margin-left:20px;
+	position:relative;
+	top:-14px;
+	
+}
+
+#unf,#pnm{
+	color:white;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size:20px;
+	margin-left:20px;
+	position:relative;
+	top:-14px;
+}
+

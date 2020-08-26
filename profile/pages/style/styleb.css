@@ -1,0 +1,566 @@
+/* ppage header coding*/
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+
+#buss_con{
+	
+	width:100%;
+	height:100px;
+	background-color: #161415;
+	box-shadow: 0px 0px 10px black;
+	text-align: center;
+	color:white;
+	margin-bottom:20px;
+	
+}
+
+#buss_wri{
+	font-size:35px;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+#buss_wrio{
+	font-size:20px;
+	margin-top:8px;
+	
+}
+
+#com_con{
+	
+	width:35%;
+	height:500px;
+	border-radius:10px;
+	position:relative;
+	left:33%;
+	box-shadow:0px 0px 5px black;
+	
+}
+
+#com_creat{
+	
+	width:90%;
+	height:75px;
+	
+	box-shadow:0px 0px 5px black;
+	margin-left:5%;
+	margin-right:5%;
+	position:absolute;
+	top:50px;
+}
+#com_delete{
+	
+		width:90%;
+	height:75px;
+	
+	box-shadow:0px 0px 5px black;
+	margin-left:5%;
+	margin-right:5%;
+	position:absolute;
+	top:190px;
+}
+#com_logout{
+	
+	width:90%;
+	height:75px;
+	
+	box-shadow:0px 0px 5px black;
+	margin-left:5%;
+	margin-right:5%;
+	position: absolute;
+	top:330px;
+}
+
+#creat_btn{
+	width:80%;
+	height:75px;
+	
+	cursor:pointer;
+	background: none;
+	position: absolute;
+	outline:none;
+	font-size:24px;
+	text-align: center;
+	border:none;
+}
+
+#delete_btn{
+	width:80%;
+	height:75px;
+	border:none;
+	cursor:pointer;
+	background: none;
+	position: absolute;
+	outline:none;
+	font-size:24px;
+	text-align: center;
+}
+#logout_btn{
+width:80%;
+	height:75px;
+	border:none;
+	cursor:pointer;
+	background: none;
+	position: absolute;
+	outline:none;
+	font-size:24px;
+	text-align: center;
+}
+
+#creat_model{
+	width:100%;
+	height:0;
+	
+	
+	background:rgba(150, 148, 148, 0.9);
+	position: absolute;
+	top:0;
+	left:0;
+	overflow:hidden;
+	
+	
+}
+
+#com_logo{
+	width:140px;
+	height:140px;
+	border-radius: 50%;
+	border:2px solid white;
+	box-shadow: 0px 0px 5px black;
+	position: relative;
+	left:10px;
+	top:10px;
+	color:white;
+	cursor:pointer;
+}
+#logoph{
+	color:white;
+	font-size:20px;
+	text-align:center;
+	position:relative;
+	top:50px;
+}
+
+#uploadph{
+	width:140px;
+	height:140px;
+	border:1px solid red;
+	border-radius:50%;
+	position: relative;
+	top:-50px;
+	opacity:0;
+	cursor:pointer;
+	float:left;
+}
+
+#com_header{
+	text-align:center;
+	font-size:40px;
+	color:black;
+	width:400PX;
+	height: 60px;position:absolute;
+	font-weight:bold;
+	float:left;
+	top:20px;
+	left:35%;
+}
+
+#com_close{
+	
+	
+	color:white;
+	width:40px;
+	height:40px;
+	position:absolute;
+	cursor: pointer;
+	float:left;
+	top:20px;
+	left:90%;
+	
+}
+
+#form_con{
+	width:80%;
+	height:100vh;
+	position:relative;
+	top:-10px;
+	
+	left:10%;
+}
+
+#companyname{
+
+	width:280px;
+	height:40px;
+	padding-left:10px;
+	border:none;
+	outline:none;
+	font-size:15px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	border-top: 5px solid red;
+}
+
+#companyname:focus{
+
+
+	transition:0.8s;
+}
+
+
+#companyname::placeholder{
+
+	font-size:15px;
+}
+
+#mallingname{
+
+	width:280px;
+	height:40px;
+	padding-left:10px;
+	border:none;
+	outline:none;
+	font-size:15px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	border-top: 5px solid red;
+}
+
+#mallingname:focus{
+
+	transition:0.8s;
+}
+
+
+#mallingname::placeholder{
+
+	font-size:15px;
+}
+
+#textarea{
+
+	width:280px;
+	height:40px;
+	padding-left:10px;
+	border:none;
+	padding-top:5px;
+	outline:none;
+	font-size:15px;
+	
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	border-top: 5px solid red;
+	position: relative;
+	top:11px;
+}
+
+#textarea:focus{
+
+
+	transition:0.8s;
+}
+
+
+#textarea::placeholder{
+
+	font-size:15px;
+}
+
+#phonenumber{
+
+	width:280px;
+	height:40px;
+	padding-left:10px;
+	border:none;
+	padding-top:5px;
+	outline:none;
+	font-size:15px;
+	
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	border-top: 5px solid red;
+	position: relative;
+	top:30px;
+	left:140px;
+}
+
+#phonenumber:focus{
+
+
+	transition:0.8s;
+}
+
+
+#phonenumber::placeholder{
+
+	font-size:15px;
+}
+
+#faxnumber{
+
+	width:280px;
+	height:40px;
+	padding-left:10px;
+	border:none;
+	padding-top:5px;
+	outline:none;
+	font-size:15px;
+	
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	border-top: 5px solid red;
+	position: relative;
+	top:30px;
+	left:140px;
+}
+
+#faxnumber:focus{
+
+
+	transition:0.8s;
+}
+
+
+#faxnumber::placeholder{
+
+	font-size:15px;
+}
+
+#email{
+
+	width:280px;
+	height:40px;
+	padding-left:10px;
+	border:none;
+	padding-top:5px;
+	outline:none;
+	font-size:15px;
+
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	border-top: 5px solid red;
+	position: relative;
+	top:30px;
+	left:140px;
+}
+
+#email:focus{
+
+	
+	transition:0.8s;
+}
+
+
+#email::placeholder{
+
+	font-size:15px;
+}
+
+#website{
+
+	width:280px;
+	height:40px;
+	padding-left:10px;
+	border:none;
+	padding-top:5px;
+	outline:none;
+	font-size:15px;
+	
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	border-top: 5px solid red;
+	position: relative;
+	top:123px;
+	left:-145px;
+}
+
+#website:focus{
+
+
+	transition:0.8s;
+}
+
+
+#website::placeholder{
+
+	font-size:15px;
+}
+
+#send{
+
+	width:280px;
+	height:40px;
+	padding-left:10px;
+	border:none;
+	padding-top:5px;
+	outline:none;
+	font-size:20px;
+	background:rgb(204, 6, 6);
+	color:white;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	border-top: 5px solid rgb(253, 8, 0);
+	position: relative;
+	top:181px;
+	border-radius: 25px;
+	left:-28%;
+	cursor: pointer;
+}
+
+#send:focus{
+
+	
+	transition:0.8s;
+	margin-top:4px;
+}
+
+
+#send::placeholder{
+
+	font-size:15px;
+}
+
+#date{
+
+	width:280px;
+	height:40px;
+	padding-left:10px;
+	border:none;
+	padding-top:5px;
+	outline:none;
+	font-size:15px;
+
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	border-top: 5px solid red;
+	position: relative;
+	top:81px;
+	left:140px;
+}
+
+#date:focus{
+
+	box-shadow:0px 0px 10px rgb(224, 8, 8);
+	transition:0.8s;
+}
+
+
+#date::placeholder{
+
+	font-size:15px;
+}
+
+#choose{
+
+	width:280px;
+	height:40px;
+	padding-left:10px;
+	border:none;
+	padding-top:5px;
+	outline:none;
+	font-size:15px;
+	
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	border-top: 5px solid red;
+	position: relative;
+	top:81px;
+	left:-54px;
+}
+
+#choose:focus{
+
+	box-shadow:0px 0px 10px rgb(224, 8, 8);
+	transition:0.8s;
+}
+
+
+#choose::placeholder{
+
+	font-size:15px;
+}
+
+#financial{
+color:white;
+font-size:20px;
+position: relative;
+	top:40px;
+	left:-180px;
+
+
+}
+
+#stocktype{
+	color:white;
+	font-size:20px;
+	position: relative;
+	top:40px;
+	left:140px;
+	}
+
+#ok_btn,#cancle_btn{
+	width:80px;
+	height:30px;
+	background: white;
+	color:black;
+	border:1px solid #ccc;
+	padding:8px;
+	margin-left:4px;
+	outline: none;
+	
+}
+
+
+#show_box{
+	
+	width:350px;
+	height:330px;
+	border:1px solid #ccc;
+	background:#E8F4F7;
+	position: absolute;
+	top:30%;box-shadow: 0px 0px 16px gray;
+	left:40%;
+	border-radius: 10px;
+	z-index:100;
+	display: none;
+	
+}
+
+#check_icon{
+	width: 80px;
+	height:80px;
+	border-radius:50%;
+	background: red;
+	color:white;
+	text-align: center;
+	margin-top:20px;
+	font-size:60px;
+	padding-top:10px;
+	position: relative;
+	left: 38%;
+}
+
+
+#message{
+	color:black;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#click_btn{
+	width:180px;
+	height:60px;
+	border:none;
+	background: #171153;
+	color:white;
+	text-align: center;
+	font-size: 18px;
+	padding:10px;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	top:80px;
+	left:80px;
+}
+
+#click:hover{
+
+	font-size:20px;
+	box-shadow:0px 0px 5px black;
+	transition: 0.9s;
+}

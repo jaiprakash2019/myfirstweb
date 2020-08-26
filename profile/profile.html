@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="image/logo.png" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" type="text/css" href="style/animated.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Profile Page</title>
+</head>
+<body>
+<div id = "profile_page">
+  <div id="main_con">
+
+    <div id="profile_page_con" class="animated fadeInDown">
+           
+        <div id="profile_con">
+                <i  class="fa fa-upload animated infinite pulse" id="faaa" style="font-size:30px;padding-left:45px;color:#173a5e;cursor:pointer;"></i><br />
+            <span id="up"> Upload Img</span>
+            <input type="file" accept="image/*" onchange="profile()" id="upload_img" />
+            
+        </div>
+        <div id="ncon">
+            <span id="input_uname"></span><br />
+           
+        </div>
+        <span id="alert"></span>
+        <div id="next" style="display:none;">
+             <i class="fa fa-angle-double-right" style="font-size:48px;color:#173a5e;"></i>
+             <i class="fa fa-angle-double-right" style="font-size:48px;color:#173a5e;"></i>
+             <i class="fa fa-angle-double-right" style="font-size:48px;color:#173a5e;"></i>
+        </div> 
+
+        <div id="banner">
+                <center>
+                    <div id="imgcon">
+                <img src="image/logo.png" alt="site intro" width="70" height="70" />
+                    </div>
+                <h1 id="sitename">SAFE_DOC</h1>
+                </center>
+            </div>
+        
+    </div>
+  </div>  
+
+  <!-- profile page coding -->
+
+  <div id="header">
+      <span id="time"></span>
+    <div id="u_name">
+        <h1 id="pname" style="text-transform:capitalize;"></h1>
+    </div>
+<div id="pp"></div>
+
+  </div>
+
+  <section id="sectione">
+  <a href="pages/bussines.html">
+    <div id="menu">
+        <center>
+        <img src="image/bui.png" alt="buisness"  width="100" height="100"/>
+        <span style="color:green;font-size:18px;font-weight:bold;">Bussiness</span>
+    </center>
+    </div>
+	</a>
+
+    <div id="menutw">
+            <center>
+            <img src="image/about.png" alt="buisness"  width="100" height="100"/>
+            <span  style="color:#173a5e;font-weight:bold;font-size:18px;">About me</span>
+        </center>
+        </div>
+<a href="pages/contact.html">
+    <div id="menuth">
+            <center>
+                    <img src="image/contact.png" alt="buisness"  width="100" height="100"/>
+                    <span  style="color:#173a5e;font-weight:bold;font-size:18px;">Contacts</span>
+
+            </center>
+    </div>
+</a>
+    <div id="menufo" onclick="m()">
+            <center>
+                    <img src="image/play.png" alt="buisness"  width="100" height="100"/>
+                    <span  style="color:#173a5e;font-size:18px;font-weight:bold;">Playlist</span>
+             </center>
+    </div>
+    <div id="menufi">
+            <center>
+                    <img src="image/logou.png" alt="buisness"  width="100" height="100"/>
+                    <span  style="color:red;font-size:18px;font-weight:bold;">Logout</span>
+            </center>
+    </div>
+
+
+  </section>
+
+  <h1 id="plz" style="font-size:32px;text-align:center;color:gray;position:absolute;top:500px;left:43%;display:none;">Please Wait...</h1>
+<footer id="footere">
+
+   
+    <div id="bannero">
+        <center>
+          
+        <img src="image/logo.png" alt="site intro" width="70" height="70" />
+          
+       
+        </center>
+    </div>
+    <h1 id="sitenameo">SAFE_DOC</h1>
+
+</footer>
+
+
+  </div>
+
+
+<script src="script/welcome_up.js"></script>
+</body>
+</html>

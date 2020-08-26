@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <link rel="stylesheet" type="text/css" href="style/stylec.css" />
+    <link rel="stylesheet" type="text/css" href="style/animated.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact Page</title>
+</head>
+<body>
+    <div id="cpage">
+<header id="img_div">
+    <div id="img_con"></div>
+</header>
+
+<h1 id="private">Private Contacts</h1>
+<div id="c_con">
+        <div id="round">+</div>
+        <form  autocomplete="off" id="form_rest">
+            <input type="text" name="usercontact" id="ucontact" placeholder="Fullname" />
+            <input type="text" name="unumber" maxlength="10" id="ufnumber" placeholder="Primary number" />
+            <input type="text" name="snumber" maxlength="10" id="usnumber" placeholder="Secondary number">
+            <span id="nsaved" style="font-size:18px;color:green;position:absolute;bottom:15px;left:10px;"></span>
+            <input type="button" id="sub" onclick="add_btn()" value="Add" />
+
+
+        </form>
+</div>
+
+<div id="clist">
+    <h1 id="c_list" style="color:white;font-size:27px;margin:0;padding:0;text-align:center;margin-top:5px;">Contacts list</h1>
+    <input type="search" oninput="c_show(this)" id="search" name="search" placeholder="Search Contacts here"/>
+
+    <div id="contact_list">
+
+       
+
+
+    </div>
+
+<div id="r_logout">
+    
+        <div id="log_out" onclick="s_logout()"><i class="fa fa-sign-out" id="log_i"></i>Logout</div>
+  
+        <div id="re_s" onclick="r_restore()"><i class="fa fa-refresh" id="lor_i"></i>Restore Contact</div>
+</div>
+</div>
+
+<h1 id="lop" style="color:gray;font-size:30px;text-align:center;position:relative;top:500px;display:none;">Please wait...</h1>
+<div id="r_contact">
+    <i class="fa fa-close" id="closer_i" onclick="close_r()"></i>
+<h1 id="list_n"></h1>
+<center>
+<table border="1" align="center" bgcolor="white" id="restore_table" height="50">
+ <tr>
+<th width="200">Username</th>
+<th width="150">First number</th>
+<th width="150">Second number</th>
+<th width="150">Restore contact</th>
+
+ </tr> 
+   
+</table>
+</center>
+</div>
+</div>
+
+<script src="script/scriptc.js">
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content ="width=device-width,initial-scale=1.0">
+	<title>HomePage</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css" />
+	<link rel="stylesheet" type="text/css" href="style/animated.css" />
+	<link rel="icon" type="image/x-icon" href="images/logo.png" />
+	<link href="https://fonts.googleapis.com/css?family=Fascinate+Inline" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<noscript>
+		<h1>please enabled javascript</h1>
+		
+	<style>
+		
+		h1{
+			text-align:center;
+			font-size:100px;
+		}
+		body{
+			background:#000000;
+			color:white;
+			
+		}
+		
+		
+	#webpage{
+		display: none;
+		}
+		</style>
+	</noscript>
+</head>
+<body>
+	<div id="webpage">
+		<div id="homecon">
+		<div id="siteintrocon">
+			<center>
+				<div id="imgcon">
+			<img src="images/logo.png" alt="site intro" width="100" height="100" />
+				</div>
+			<h1 id="sitename">SAFE_DOC</h1>
+				<i  class="fa fa-play-circle-o animated infinite swing" style="font-size:50px; margin-top:20px;cursor:pointer;" onClick="sidebar()"></i>
+			</center>
+		</div>
+			
+		</div>
+		
+		<div id="side-bar">
+		<i class="fa fa-close" style="padding:5px;background:black;color:white;font-size:22px;float: right;margin:10px;cursor:pointer;" onClick="sidebar_close()"></i>
+			<h1 id="logh">Login User !</h1>
+			<form id="login_form" autocomplete="off" onsubmit="return login()">
+			<input type="text" required="required" name="username" id="user" placeholder="&#xf2bd &nbsp;Username" />
+			<span id="unf"></span>
+			<input type="password" required="required" name="password" id="pass"  placeholder="&#xf023 &nbsp;Password" />
+			<span id="pnm"></span>
+			<input type="submit" id="log"  value="Log in" name="submit" />
+			
+			</form>
+			
+			
+			<h1 id="loge">Signup User !</h1>
+			<form id="signup_form" autocomplete="off" onSubmit="return sign()">
+			<input type="text" required="required" name="username" id="users"  placeholder="&#xf2bd &nbsp;Your name" />
+			<input type="email" required="required" class="animated" onblur="user_ex()" name="email" id="emails" placeholder="&#xf0e0 &nbsp;Email id" />
+				
+				<span id="reg" class="regis"></span>
+			<input type="password"  required="required" onblur="pass_val()" name="password" id="passs" placeholder="&#xf023 &nbsp;Password" />
+				<span id="spa"></span>
+			<input type="number" oninput="mob_val()" required="required" name="mobile no" id="mobiles" placeholder="&#xf10b &nbsp;Mobile no" />
+				<span id="succ"></span>
+			<input type="submit" id="logs"  value="Sign Up" name="submit" />
+				
+			
+			</form>
+		</div>
+		
+	</div>
+<script type="text/javascript" src="script/compatible.js"></script>
+<script type="text/javascript" src="script/script.js"></script>	
+<script type="text/javascript" src="script/signup_login.js"></script>	
+
+</body>
+</html>
